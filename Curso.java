@@ -8,7 +8,7 @@ package Model;
  *
  * @author conza
  */
-public class Curso {
+public abstract class Curso {
 
     private String codigo;
     private String nome;
@@ -16,7 +16,7 @@ public class Curso {
     private String duracao;
     private String tipoDuracao;
     private String modalidade;
-    private String status;
+    private boolean status;
 
     public String getCodigo() {
         return codigo;
@@ -67,11 +67,11 @@ public class Curso {
         modalidade = _modalidade;
     }
 
-    public String getstatus() {
+    public boolean getstatus() {
         return status;
     }
 
-    public void setstatus(String _status) {
+    public void setstatus(boolean _status) {
         status = _status;
     }
 }
