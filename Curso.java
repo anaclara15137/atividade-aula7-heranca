@@ -26,7 +26,7 @@ public abstract class Curso {
         codigo = _codigo;
     }
 
-    private String getnome() {
+    public String getnome() {
         return nome;
     }
 
